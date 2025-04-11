@@ -51,6 +51,7 @@ function App() {
 						<Routes>
 							<Route path="*" element={<NotFoundPage />} />
 							<Route exact path="/" element={<HomePage />} />
+							<Route exact path="/portfolio-jumi" element={<HomePage />} />
 							<Route exact path="/about-me" element={<AboutMePage />} />
 							<Route exact path="/contact" element={<ContactPage />} />
 							<Route exact path="/projects" element={<ProjectsPage />} />
