@@ -3,6 +3,9 @@
 
 ¡Bienvenidos a mi portafolio! Soy **Milagros Marquina**, una **Fullstack Developer** apasionada por crear aplicaciones web y móviles modernas y funcionales. Este es mi portafolio personal donde podrás ver los proyectos que he desarrollado a lo largo de mi carrera como desarrolladora.
 
+
+![image](https://github.com/user-attachments/assets/0c28ad01-76eb-4798-8b44-094220759764)
+
 ---
 
 ## **🚀 Proyecto**
@@ -19,11 +22,6 @@ Este portafolio está diseñado para mostrar mis habilidades como desarrolladora
 - **Optimización SEO**: La página está optimizada para motores de búsqueda, lo que mejora su visibilidad.
 - **Navegación sencilla**: La estructura es fácil de navegar y proporciona acceso rápido a la información más importante.
 - **Datos locales**: Los proyectos se gestionan a partir de un archivo de datos JSON en lugar de una base de datos.
-
----
-
-## **📱 Capturas de pantalla**
-
 
 ---
 
