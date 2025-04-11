@@ -1,5 +1,5 @@
 
-# **Milagros Marquina - Fullstack Developer Portfolio**
+# **Milagros Marquina - Fullstack Developer**
 
 ¡Bienvenidos a mi portafolio! Soy **Milagros Marquina**, una **Fullstack Developer** apasionada por crear aplicaciones web y móviles modernas y funcionales. Este es mi portafolio personal donde podrás ver los proyectos que he desarrollado a lo largo de mi carrera como desarrolladora.
 
