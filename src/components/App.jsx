@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
 import NotFoundPage from '../pages/NotFound/NotFoundPage'
 import HomePage from '../pages/Home/HomePage'
@@ -50,7 +50,7 @@ function App() {
 					<Layout>
 						<Routes>
 							<Route path="*" element={<NotFoundPage />} />
-							<Route exact path="/" element={<HomePage />} />
+							<Route path="/" element={<Navigate to="/portfolio-jumi" />} />
 							<Route exact path="/portfolio-jumi" element={<HomePage />} />
 							<Route exact path="/about-me" element={<AboutMePage />} />
 							<Route exact path="/contact" element={<ContactPage />} />
