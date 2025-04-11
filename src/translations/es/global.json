@@ -1,0 +1,36 @@
+{
+    "about-me-page": {
+        "title": "SOBRE MÍ",
+        "description": "Desarrolladora Full Stack con +1 año de experiencia utilizando tecnologías como Angular, Spring Boot, Java, React, NodeJS, JS y más. Me apasiona el mundo del desarrollo web y móvil. Cuento con conocimientos en Front-End, Back-End y en otras áreas como desarrollo móvil y desarrollo de escritorio. Me gusta aprender sobre nuevas tecnologías y apoyar en el desarrollo de proyectos e iniciativas de mejora para lograr los resultados esperados.",
+        "my-skills": "Mis habilidades",
+        "see-projects": "Ver proyectos",
+        "download-cv": "Descargar CV"
+    },
+    "home-page": {
+        "title": "Hola soy",
+        "description": "Me apasiona el mundo del desarrollo web, aprender sobre nuevas tecnologías y apoyar en el desarrollo de proyectos e iniciativas de mejora para lograr los resultados esperados.",
+        "btn-see-more": "Ver más"
+    },
+    "projects-page": {
+        "title": "Proyectos",
+        "type": "Móvil"
+    },
+    "project-type-page": {
+        "search": "Buscar proyecto..."
+    },
+    "project-details-page": {
+        "subtitle": "Proyecto"
+    },
+    "contact-page": {
+        "name": "Nombre *",
+        "email": "Correo Electrónico *",
+        "message": "Mensaje *",
+        "btn-send": "Enviar"
+    },
+    "navbar-page": {
+        "home": "Inicio",
+        "about-me": "Sobre mí",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    }
+}

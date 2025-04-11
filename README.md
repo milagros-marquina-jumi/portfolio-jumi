@@ -1,54 +1,107 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# **Milagros Marquina - Fullstack Developer Portfolio**
 
-Currently, two official plugins are available:
+¡Bienvenidos a mi portafolio! Soy **Milagros Marquina**, una **Fullstack Developer** apasionada por crear aplicaciones web y móviles modernas y funcionales. Este es mi portafolio personal donde podrás ver los proyectos que he desarrollado a lo largo de mi carrera como desarrolladora.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## **🚀 Proyecto**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este portafolio está diseñado para mostrar mis habilidades como desarrolladora **Fullstack**, utilizando tecnologías como **ReactJS**, **Vite**, **Styled-Components**, **i18next**, y más. Aquí podrás encontrar mis proyectos más destacados, ver mis logros y detalles de contacto.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## **💡 Características**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Diseño moderno y responsivo**: Mi portafolio se adapta a cualquier dispositivo, garantizando una experiencia fluida tanto en escritorio como en móvil.
+- **Internacionalización**: Soporta dos idiomas: **Español** e **Inglés** gracias a **i18next**.
+- **Modo oscuro/claro**: Puedes alternar entre el modo oscuro y claro de la aplicación.
+- **Optimización SEO**: La página está optimizada para motores de búsqueda, lo que mejora su visibilidad.
+- **Navegación sencilla**: La estructura es fácil de navegar y proporciona acceso rápido a la información más importante.
+- **Datos locales**: Los proyectos se gestionan a partir de un archivo de datos JSON en lugar de una base de datos.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## **📱 Capturas de pantalla**
+
+
+---
+
+## **🛠 Tecnologías utilizadas**
+
+Este proyecto fue construido utilizando las siguientes tecnologías:
+
+- **Frontend**:
+  - [ReactJS](https://reactjs.org/) - Para la interfaz de usuario.
+  - [Vite](https://vitejs.dev/) - Herramienta de construcción rápida y moderna para aplicaciones de frontend.
+  - [React Router](https://reactrouter.com/) - Para la navegación entre páginas.
+  - [i18next](https://www.i18next.com/) - Para la internacionalización (idiomas: Español e Inglés).
+  - [Styled-Components](https://styled-components.com/) - Para estilizar la aplicación utilizando CSS-in-JS.
+  - [React Spinners](https://www.npmjs.com/package/react-spinners) - Para animaciones de carga.
+  - [SweetAlert2](https://sweetalert2.github.io/) - Para mostrar alertas estilizadas.
+  
+- **Backend**:
+  - **No utiliza backend ni base de datos**. Los datos de los proyectos se cargan desde un archivo **`data.js`** local.
+
+- **Herramientas de Desarrollo**:
+  - [TypeScript](https://www.typescriptlang.org/) - Para escribir código más robusto y con tipado estático.
+  - [ESLint](https://eslint.org/) - Para mantener un código limpio y sin errores.
+  - [GitHub Pages](https://pages.github.com/) - Para el despliegue de la aplicación en la web.
+
+---
+
+## **⚙️ Instalación**
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/milagros-marquina-jumi/portfolio-jumi.git
+   ```
+
+2. Navega al directorio del proyecto:
+
+   ```bash
+   cd portfolio-jumi
+   ```
+
+3. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicia el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Abre tu navegador y accede a **http://localhost:5173/**.
+
+---
+
+## **🌐 Despliegue en Producción**
+
+Puedes ver el proyecto en vivo en GitHub Pages:
+
+[https://milagros-marquina-jumi.github.io/portfolio-jumi](https://milagros-marquina-jumi.github.io/portfolio-jumi)
+
+---
+
+## **📝 Licencia**
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## **📫 Contacto**
+
+- **Correo electrónico**: [milagros.marquina@example.com](mailto:milagros.marquina@example.com)
+- **LinkedIn**: [Milagros Marquina](https://www.linkedin.com/in/milagros-marquina/)
+- **GitHub**: [milagros-marquina-jumi](https://github.com/milagros-marquina-jumi)
+
+---
+
+### ¡Gracias por visitar mi portafolio!
