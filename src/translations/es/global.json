@@ -16,7 +16,8 @@
         "type": "Móvil"
     },
     "project-type-page": {
-        "search": "Buscar proyecto..."
+        "search": "Buscar proyecto...",
+        "no-results": "No results found"
     },
     "project-details-page": {
         "subtitle": "Proyecto"

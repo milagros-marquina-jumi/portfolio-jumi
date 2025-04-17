@@ -1,26 +1,56 @@
-import { useMemo } from "react"
-import { Link, useParams, useSearchParams } from "react-router-dom"
-import { getAllProjects, getProjecByType } from "../../../data/projects"
-import ProyectoItem from './../../../components/ProjectItem'
-import './project_type.css'
-import { useTranslation } from "react-i18next"
+import { useState, useEffect } from "react";
+import { Link, useParams, useSearchParams } from "react-router-dom";
+import { getAllProjects } from "../../../data/projects";
+import ProyectoItem from './../../../components/ProjectItem';
+import './project_type.css';
+import { useTranslation } from "react-i18next";
 
 export function ProjectTypePage() {
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
     const [searchParams, setSearchParams] = useSearchParams();
+    const [selectedType, setSelectedType] = useState("");
+    const [filter, setFilter] = useState("");
     const projects = getAllProjects();
     const { projectType } = useParams();
-    const projectId = useMemo(() => getProjecByType(projectType), [projectType]);
+
+    useEffect(() => {
+        setSelectedType(projectType);
+        setFilter("");
+        setSearchParams({ filter: "", type: projectType });
+    }, [projectType]);
+
+    const filteredProjects = projects.filter((project) => {
+        if (!filter) {
+            return project.type === selectedType;
+        }
+        return (
+            project.type === selectedType &&
+            project.name.toLowerCase().includes(filter.toLowerCase())
+        );
+    });
 
     const handleChange = (e) => {
-        setSearchParams({ filter: e.target.value });
+        const newFilter = e.target.value;
+        setFilter(newFilter);
+        setSearchParams({ filter: newFilter, type: selectedType });
     };
 
-    const filter = searchParams.get("filter") ?? "";
+    const clearSearch = () => {
+        setFilter("");
+        setSearchParams({ filter: "", type: selectedType });
+    };
 
-    const {
-        type
-    } = projectId;
+    const changeWebProjects = () => {
+        setSelectedType("web");
+        setFilter("");
+        setSearchParams({ filter, type: "web" });
+    };
+
+    const changeMovilProjects = () => {
+        setSelectedType("movil");
+        setFilter("");
+        setSearchParams({ filter, type: "movil" });
+    };
 
     return (
         <div>
@@ -37,33 +67,49 @@ export function ProjectTypePage() {
                     <button
                         className="btn-search noSelect cursor-pointer"
                         type="reset"
-                        onChange={handleChange}
+                        onClick={clearSearch}
                     ></button>
                 </form>
+
+                <div className="projects-filter">
+                    <button
+                        className={`filter-btn btn-web ${selectedType === "web" ? "active" : ""}`}
+                        onClick={changeWebProjects}
+                    >
+                        {t('projects-page.title')} WEB
+                    </button>
+
+                    <button
+                        className={`filter-btn btn-movil ${selectedType === "movil" ? "active" : ""}`}
+                        onClick={changeMovilProjects}
+                    >
+                        {t('projects-page.title')} MOBILE
+                    </button>
+                </div>
+
                 <br />
+
                 <div className="projects-list noScrollBar">
-                    {projects
-                        .filter((project) => {
-                            if (!filter) return project.type === projectType;
-                            return project.type === projectType && project.name.toLowerCase().includes(filter.toLowerCase());
-                        })
-                        .map((project) => (
-                            <div div key={project.id} >
+                    {filteredProjects.length === 0 ? (
+                        <p className="no-results">{t('project-type-page.no-results')}</p>
+                    ) : (
+                        filteredProjects.map((project) => (
+                            <div key={project.id}>
                                 <Link
                                     className="noSelect"
-                                    to={`/projects/${type}/${project.id}`}
+                                    to={`/projects/${project.type}/${project.id}`}
                                 >
                                     <ProyectoItem
-                                        imgClase={type}
+                                        imgClase={project.type}
                                         projects={project}
                                         type={project.type}
                                     />
                                 </Link>
                             </div>
                         ))
-                    }
+                    )}
                 </div>
             </div>
-        </div >
+        </div>
     );
 }
