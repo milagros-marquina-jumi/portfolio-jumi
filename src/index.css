@@ -733,6 +733,11 @@ header nav ol li {
     top: 0% !important;
   }
 
+  .project-item {
+    margin-top: -1em !important;
+    margin-bottom: 0em !important;
+  }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -741,6 +746,12 @@ header nav ol li {
   ol.active {
     padding: 1rem;
     font-size: 16px;
+  }
+
+  .project-item {
+    margin-top: 1em !important;
+    margin-bottom: 0em !important;
+    margin-left: -3em;
   }
 
 }

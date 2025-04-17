@@ -23,7 +23,8 @@
     border-radius: 5px;
     width: 100%;
     font-weight: 600;
-    padding: 15px;
+    padding: 30px;
+    font-size: 1.2rem;
 }
 
 .search .btn-search {
@@ -39,7 +40,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    top: 0;
+    top: 9px;
     outline: none;
     margin-right: 10px;
 }

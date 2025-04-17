@@ -39,7 +39,7 @@ Este proyecto fue construido utilizando las siguientes tecnologías:
   - [Styled-Components](https://styled-components.com/) - Para estilizar la aplicación utilizando CSS-in-JS.
   - [React Spinners](https://www.npmjs.com/package/react-spinners) - Para animaciones de carga.
   - [SweetAlert2](https://sweetalert2.github.io/) - Para mostrar alertas estilizadas.
-  
+
 - **Backend**:
   - **No utiliza backend ni base de datos**. Los datos de los proyectos se cargan desde un archivo **`data.js`** local.
 
@@ -98,9 +98,9 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## **📫 Contacto**
 
-- **Correo electrónico**: [milagros.marquina@example.com](mailto:milagros.marquina@example.com)
-- **LinkedIn**: [Milagros Marquina](https://www.linkedin.com/in/milagros-marquina/)
-- **GitHub**: [milagros-marquina-jumi](https://github.com/milagros-marquina-jumi)
+- **Correo electrónico**: [milagros.marquina@example.com](mailto:milagrosjulisa.mm@gmail.com)
+- **LinkedIn**: [Milagros Marquina](https://www.linkedin.com/in/milagros-marquina-jumi/)
+- **GitHub**: [milagros-marquina-jumi](https://github.com/milagros-marquina-jumi/portfolio-jumi)
 
 ---
 

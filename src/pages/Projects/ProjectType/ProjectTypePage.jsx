@@ -25,7 +25,6 @@ export function ProjectTypePage() {
     return (
         <div>
             <div className="project-type">
-                <br className="noSelect" />
                 <form className="search">
                     <input
                         placeholder={t('project-type-page.search')}
