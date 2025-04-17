@@ -44,8 +44,8 @@ export function ProjectTypePage() {
                 <div className="projects-list noScrollBar">
                     {projects
                         .filter((project) => {
-                            if (!filter) return true;
-                            return project.name.toLowerCase().includes(filter.toLowerCase());
+                            if (!filter) return project.type === projectType;
+                            return project.type === projectType && project.name.toLowerCase().includes(filter.toLowerCase());
                         })
                         .map((project) => (
                             <div div key={project.id} >
