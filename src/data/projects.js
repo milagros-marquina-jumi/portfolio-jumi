@@ -7,9 +7,9 @@ let projects = [
         img: '/portfolio-jumi/assets/img/projects/milagrosmarquina-web.png',
         img_details: '/portfolio-jumi/assets/img/projects/milagrosmarquina-web-detail.png',
         type: 'web',
-        link: 'https://milagros.marquina.com',
+        link: 'https://milagros-marquina-jumi.github.io/portfolio-jumi',
         app_store: '',
-        github_link: 'https://github.com/milagros-marquina-jumi/MilagrosMarquina.com',
+        github_link: 'https://github.com/milagros-marquina-jumi/portfolio-jumi',
     },
     {
         id: 'restaurante-movil',

@@ -64,7 +64,7 @@
 .about-me-info {
     width: 65%;
     height: 100%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     align-items: center;
     overflow: auto;
 }
@@ -90,6 +90,12 @@
 .about-me-img img {
     width: 100%;
     min-width: 30vh;
+    transform-origin: center;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
 }
 
 .list-info-about-me {
@@ -100,10 +106,10 @@
 
 .about-me-info__links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
     margin-top: 2rem;
-    width: 100%;
 }
 
 .download-icon {
