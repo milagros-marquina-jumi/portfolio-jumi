@@ -45,6 +45,11 @@
     margin-right: 10px;
 }
 
+.btn-search img {
+    width: 15px;
+    height: 15px;
+}
+
 .img-proyectos {
     width: 100%;
     display: flex;
@@ -87,17 +92,6 @@ filter-buttons {
   margin-bottom: 20px;
 }
 
-.filter-btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
-  font-weight: bold;
-  color: white;
-}
-
 .btn-web {
   background-color: var(--primary-color);
 }
@@ -121,4 +115,21 @@ filter-buttons {
     position: relative;
     margin: 0 auto;
     justify-content: space-evenly;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #cccccc;
+}
+
+.filter-btn.active {
+    background-color: #f39c12;
+    font-weight: bold;
 }
