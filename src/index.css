@@ -573,6 +573,9 @@ header nav ol li {
     grid-template-columns: 1fr !important;
   }
 
+  .img-details-project img {
+    width: 80% !important;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -738,6 +741,9 @@ header nav ol li {
     margin-bottom: 0em !important;
   }
 
+  .img-details-project img {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
