@@ -57,7 +57,7 @@ export function Contact() {
 							<div className="social-media">
 								<a
 									className="icon-social-contact icon-linkedin noSelect"
-									href="https://www.linkedin.com/in/milagros-jumi/"
+									href="https://www.linkedin.com/in/milagros-marquina-jumi/"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -71,7 +71,7 @@ export function Contact() {
 								</a>
 								<a
 									className="icon-social-contact icon-whatsapp noSelect"
-									href="https://api.whatsapp.com/send?phone=51950135713&text=Hola%20Milagros!%20👋"
+									href="https://api.whatsapp.com/send?phone=51950135713&text=Hola%20Milagros!%20(◕‿◕)"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
