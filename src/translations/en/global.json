@@ -16,7 +16,8 @@
         "type": "Mobile"
     },
     "project-type-page": {
-        "search": "Search project..."
+        "search": "Search project...",
+        "no-results": "No results found"
     },
     "project-details-page": {
         "subtitle": "Project"

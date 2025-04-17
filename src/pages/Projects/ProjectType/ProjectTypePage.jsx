@@ -8,22 +8,20 @@ import { useTranslation } from "react-i18next";
 export function ProjectTypePage() {
     const [t] = useTranslation("global");
     const [searchParams, setSearchParams] = useSearchParams();
-    const [selectedType, setSelectedType] = useState(""); // Estado para el tipo seleccionado
-    const [filter, setFilter] = useState(""); // Estado para el filtro de búsqueda
+    const [selectedType, setSelectedType] = useState("");
+    const [filter, setFilter] = useState("");
     const projects = getAllProjects();
     const { projectType } = useParams();
 
-    // Establecer el tipo de proyecto desde la URL
     useEffect(() => {
-        setSelectedType(projectType); // Actualiza el tipo de proyecto con el valor de la URL
-        setFilter(""); // Resetea el filtro cada vez que cambie el tipo de proyecto
-        setSearchParams({ filter: "", type: projectType }); // Actualiza los parámetros de búsqueda con el filtro vacío y el tipo de proyecto
+        setSelectedType(projectType);
+        setFilter("");
+        setSearchParams({ filter: "", type: projectType });
     }, [projectType]);
 
-    // Filtrar los proyectos basados en el tipo y filtro
     const filteredProjects = projects.filter((project) => {
         if (!filter) {
-            return project.type === selectedType; // Si no hay filtro, solo filtra por tipo
+            return project.type === selectedType;
         }
         return (
             project.type === selectedType &&
@@ -31,25 +29,27 @@ export function ProjectTypePage() {
         );
     });
 
-    // Manejar el cambio del campo de búsqueda
     const handleChange = (e) => {
         const newFilter = e.target.value;
-        setFilter(newFilter); // Actualiza el estado del filtro
-        setSearchParams({ filter: newFilter, type: selectedType }); // Actualiza los parámetros de búsqueda en la URL
+        setFilter(newFilter);
+        setSearchParams({ filter: newFilter, type: selectedType });
     };
 
-    // Cambiar al filtro de proyectos Web
+    const clearSearch = () => {
+        setFilter("");
+        setSearchParams({ filter: "", type: selectedType });
+    };
+
     const changeWebProjects = () => {
         setSelectedType("web");
-        setFilter(""); // Limpiar el filtro cuando se selecciona Web
-        setSearchParams({ filter: "", type: "web" }); // Cambiar el tipo a "web" y limpiar el filtro en la URL
+        setFilter("");
+        setSearchParams({ filter, type: "web" });
     };
 
-    // Cambiar al filtro de proyectos Mobile
     const changeMovilProjects = () => {
         setSelectedType("movil");
-        setFilter(""); // Limpiar el filtro cuando se selecciona Mobile
-        setSearchParams({ filter: "", type: "movil" }); // Cambiar el tipo a "movil" y limpiar el filtro en la URL
+        setFilter("");
+        setSearchParams({ filter, type: "movil" });
     };
 
     return (
@@ -62,12 +62,12 @@ export function ProjectTypePage() {
                         className="input-textarea"
                         maxLength="50"
                         value={filter}
-                        onChange={handleChange} // Mantener el valor del filtro
+                        onChange={handleChange}
                     />
                     <button
                         className="btn-search noSelect cursor-pointer"
                         type="reset"
-                        onClick={() => setSearchParams({ filter: "", type: selectedType })}
+                        onClick={clearSearch}
                     ></button>
                 </form>
 
@@ -90,22 +90,26 @@ export function ProjectTypePage() {
                 <br />
 
                 <div className="projects-list noScrollBar">
-                    {filteredProjects.map((project) => (
-                        <div key={project.id}>
-                            <Link
-                                className="noSelect"
-                                to={`/projects/${project.type}/${project.id}`}
-                            >
-                                <ProyectoItem
-                                    imgClase={project.type}
-                                    projects={project}
-                                    type={project.type}
-                                />
-                            </Link>
-                        </div>
-                    ))}
+                    {filteredProjects.length === 0 ? (
+                        <p className="no-results">{t('project-type-page.no-results')}</p>
+                    ) : (
+                        filteredProjects.map((project) => (
+                            <div key={project.id}>
+                                <Link
+                                    className="noSelect"
+                                    to={`/projects/${project.type}/${project.id}`}
+                                >
+                                    <ProyectoItem
+                                        imgClase={project.type}
+                                        projects={project}
+                                        type={project.type}
+                                    />
+                                </Link>
+                            </div>
+                        ))
+                    )}
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

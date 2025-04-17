@@ -97,7 +97,7 @@ filter-buttons {
 }
 
 .btn-web:hover {
-  background-color: #b9862e;
+  background-color: #648a19;
 }
 
 .btn-movil {
@@ -126,7 +126,7 @@ filter-buttons {
     border-radius: 5px;
     font-weight: bold;
     color: white;
-    background-color: #cccccc;
+    background-color: #888282;
 }
 
 .filter-btn.active {
