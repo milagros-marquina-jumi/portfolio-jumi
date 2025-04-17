@@ -22,6 +22,21 @@ export function ProjectTypePage() {
         type
     } = projectId;
 
+    const changeWebProjects = () => {
+        setLoading(true);
+        setTimeout(() => {
+            navigate('/projects/web');
+            setLoading(false);
+        }, 1000);
+    }
+    const changeMovilProjects = () => {
+        setLoading(true);
+        setTimeout(() => {
+            navigate('/projects/movil');
+            setLoading(false);
+        }, 1000);
+    }
+
     return (
         <div>
             <div className="project-type">
@@ -40,6 +55,18 @@ export function ProjectTypePage() {
                         onChange={handleChange}
                     ></button>
                 </form>
+                <div className="projects-filter">
+                    <button
+                        className="filter-btn btn-web"
+                        onClick={changeWebProjects}>
+                        {t('projects-page.title')}  {t('projects-page.type')}
+                    </button>
+                    <button
+                        className="filter-btn btn-movil"
+                        onClick={changeMovilProjects}>
+                        {t('projects-page.title')}  {t('projects-page.type')}
+                    </button>
+                </div>
                 <br />
                 <div className="projects-list noScrollBar">
                     {projects

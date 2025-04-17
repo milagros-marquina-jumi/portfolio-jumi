@@ -169,7 +169,7 @@ header nav ol li {
 }
 
 .project-item-web:hover {
-  --color: #88aa44;
+  --color: var(--color-green)
 }
 
 .project-item h1 {
@@ -555,6 +555,9 @@ header nav ol li {
     width: 100% !important;
   }
 
+  .projects-filter {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 830px) {

@@ -80,3 +80,45 @@
 .noScrollBar::-webkit-scrollbar-corner {
     color: transparent;
 }
+
+filter-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-web {
+  background-color: var(--primary-color);
+}
+
+.btn-web:hover {
+  background-color: #b9862e;
+}
+
+.btn-movil {
+  background-color: var(--color-green);
+}
+
+.btn-movil:hover {
+  background-color: #648a19;
+}
+
+.projects-filter {
+    display: flex;
+    width: 50%;
+    height: 45px;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
