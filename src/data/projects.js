@@ -3,7 +3,7 @@ let projects = [
         id: 'portafolio-web',
         name: 'Milagros Marquina',
         description: 'Es mi sitio web donde podrás conocer un poco sobre mí y los proyectos que he realizado.',
-        technologies: ['ReactJS', 'HTML', 'CSSs', 'JavaScript'],
+        technologies: ['ReactJS', 'HTML', 'CSSs', 'JavaScript', 'EmailJS'],
         img: '/portfolio-jumi/assets/img/projects/milagrosmarquina-web.png',
         img_details: '/portfolio-jumi/assets/img/projects/milagrosmarquina-web-detail.png',
         type: 'web',
