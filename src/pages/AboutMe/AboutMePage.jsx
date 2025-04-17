@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import me from '/assets/img/milagrosmarquina_photo1.png'
+import me from '/assets/img/milagrosmarquina.png'
 import { useTranslation } from 'react-i18next'
 import './about_me.css'
 
@@ -55,17 +55,9 @@ function AboutMePage() {
 							</ul>
 						</div>
 						<div className="about-me-info__links noSelect">
-							<Link className="btn-download white" to="/projects">
+							<Link className="btn-download" to="/projects">
 								{t('about-me-page.see-projects')}
 							</Link>
-							<a
-								className="btn-download"
-								href="/docs/cv_marquina_milagros.pdf"
-								download
-							>
-								<span className="download-icon"></span>
-								{t('about-me-page.download-cv')}
-							</a>
 						</div>
 					</div>
 				</div>

@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
     --max-width: 1440px;
-    --padding-page: 3rem;
+    --padding-page: 5rem;
     --header-height: 6rem;
     --section-height: calc(100vh - var(--header-height));
 

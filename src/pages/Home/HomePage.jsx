@@ -24,21 +24,21 @@ function Home() {
 						<div className="social-media">
 							<a
 								className="icon-social icon-linkedin noSelect"
-								href="https://www.linkedin.com/in/milagros-jumi/"
+								href="https://www.linkedin.com/in/milagros-marquina-jumi/"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 							</a>
 							<a
 								className="icon-social icon-github noSelect"
-								href="https://github.com/jumi-developer"
+								href="https://github.com/milagros-marquina-jumi"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 							</a>
 							<a
 								className="icon-social icon-whatsapp noSelect"
-								href="https://api.whatsapp.com/send?phone=51950135713&text=Hola%20Milagros!%20👋"
+								href="https://api.whatsapp.com/send?phone=51950135713&text=Hola%20Milagros!%20(◕‿◕)"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
